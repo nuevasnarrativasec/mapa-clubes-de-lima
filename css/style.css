@@ -34,12 +34,13 @@ body{
          url('../fonts/Prelo-Book-webfont.woff') format('woff'); 
 
 }
+/*
 @font-face {
     font-family: 'prelomedium'; 
     src: url('../fonts/Prelo-Medium-webfont.woff2') format('woff2'),
          url('../fonts/Prelo-Medium-webfont.woff') format('woff'),;
 
-}
+}*/
 @font-face {
     font-family: 'prelosemibold';   
     src: url('../fonts/Prelo-SemiBold-webfont.woff2') format('woff2'),
@@ -576,16 +577,21 @@ body{
     padding-top: 60px;
 }
 
-.box-creditos{
+.box-footer{
+
 }
-    .box-creditos p{
-        font-size: 16px;
-        text-align: center;
+    .box-footer ul{
+        margin: 30px auto;
+        padding: 0;
     }
-        .box-creditos p span{
-            display: block;
-            font-weight: 700;
+        .box-footer ul li{
+            font: 13px/1.2 'prelomedium';
+            margin-bottom: 8px;
         }
+            .box-footer ul li span{
+                font-family: 'prelosemibold';
+            }
+            
 
 @media only screen and (max-width: 640px){
 
