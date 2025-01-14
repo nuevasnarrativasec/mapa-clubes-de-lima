@@ -245,7 +245,7 @@ body{
         }
         .navigation {
             position: absolute;
-            top: 270px;
+            top: 292px;
             width: 100%;
             transform: translateY(-50%);
             text-align: center;
@@ -263,6 +263,7 @@ body{
             }
 
         .box-header-interior{
+            padding-top: 20px;
             position: relative;
         }
             .ctn-header-interior{
@@ -271,10 +272,15 @@ body{
                 transform: translate(-50%, 0);               
                 width: 100%;
             }
+                .ctn-header-interior img{
+                    display: block;
+                    margin: 0 auto;
+                    max-width: 60px;
+                }
                 .box-header-interior h1{
                     font: 46px/1.2 "Noto Serif KR", serif;
                     font-weight: 700;
-                    margin-bottom: 15px;
+                    margin: 0 auto 15px;
                 }
                     .box-header-interior h1 span{
                         display: block;
@@ -645,11 +651,11 @@ body{
         max-width: 320px;
     }
     .navigation{
-        top: 322px;
+        top: 356px;
     }
     .box-mapa {
-        width: 95%;
-        margin: 0 auto;
+        margin: 15px auto 0;
+        width: 95%;       
     }
     .icon-presiona-1{
         left: 20px;
