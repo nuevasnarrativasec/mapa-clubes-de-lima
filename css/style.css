@@ -760,6 +760,9 @@ body{
     #video-movil{
         display: block;
     }
+    .btn-empezar{
+        max-width: 125px;
+    }
 
 }
 
