@@ -605,7 +605,7 @@ body{
     display: none;
 }
 
-@media only screen and (max-width: 720px){
+@media only screen and (max-width: 980px){
 
     #social ul li a.wst{
         display: block;
