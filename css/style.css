@@ -613,6 +613,12 @@ body{
     .box-cabecera{        
         background-size: cover;
     }
+    .ctn-header-interior{
+        left: inherit;
+        position: inherit; 
+        transform: inherit; 
+        width: 100%;
+    }
 
     #header-1 {
         background: url(../img/bg-header-1-movil.jpg) no-repeat center top;
