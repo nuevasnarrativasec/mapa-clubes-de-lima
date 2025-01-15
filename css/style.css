@@ -621,8 +621,10 @@ body{
     }
 
     #header-1 {
-        background: url(../img/bg-header-1-movil.jpg) no-repeat center top;
-        background-size: 100%;
+        background: inherit;
+        background-color: rgb(107, 32, 32);
+        /*background: url(../img/bg-header-1-movil.jpg) no-repeat center top;
+        background-size: 100%;*/
         min-height: 310px;
     }
     #header-2 {
