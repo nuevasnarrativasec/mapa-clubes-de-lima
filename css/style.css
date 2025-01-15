@@ -598,6 +598,12 @@ body{
                 font-family: 'prelosemibold';
             }
             
+#video-desktop{
+    display: block;
+}
+#video-movil{
+    display: none;
+}
 
 @media only screen and (max-width: 640px){
 
@@ -746,6 +752,13 @@ body{
     .box-item{
         margin: 50px auto;
         margin-bottom: 120px;
+    }
+
+    #video-desktop{
+        display: none;
+    }
+    #video-movil{
+        display: block;
     }
 
 }
