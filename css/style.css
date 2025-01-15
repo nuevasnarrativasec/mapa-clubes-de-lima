@@ -242,11 +242,11 @@ body{
         }
         .slide {
             width: 100%;
-            flex: 1 0 25%;
+            /*flex: 1 0 25%;*/
         }
         .slide img {
-            width: 100%;
-            display: block;
+            /*width: 100%;*/
+            /*display: block;*/
         }
         .navigation {
             position: absolute;
@@ -621,6 +621,91 @@ body{
     display: none;
 }
 
+/** mapa 1 **/
+.st0 {
+    fill: #dfd9a7;
+}
+
+.st1 {
+    isolation: isolate;
+}
+
+.st2 {
+    fill: #dccf46;
+}
+
+.st3 {
+    fill: #dddedf;
+}
+
+.st4 {
+    fill: #ded7a8;
+}
+
+/** mapa 2 **/
+.st00 {
+    fill: none;
+}
+
+.st11 {
+    isolation: isolate;
+}
+
+.st22 {
+    fill: #fff;
+}
+
+.st33 {
+    fill: #9ab75c;
+}
+
+.st44 {
+    fill: #70912c;
+}
+
+.st55 {
+    fill: #dddedf;
+}
+
+.st66 {
+    clip-path: url(#clippath);
+}
+
+/** mapa 3 **/
+.st000 {
+    fill: #98cfdf;
+}
+
+.st111 {
+    isolation: isolate;
+}
+
+.st222 {
+    fill: #5c99ac;
+}
+
+.st333 {
+    fill: #dddedf;
+}
+
+/** mapa 4 **/
+.st0000 {
+    isolation: isolate;
+}
+
+.st1111 {
+    fill: #f4dba6;
+}
+
+.st2222 {
+    fill: #dddedf;
+}
+
+.st3333 {
+    fill: #f8b01a;
+}
+
+
 @media only screen and (max-width: 980px){
 
     #social ul li a.wst{
@@ -817,7 +902,7 @@ body{
     }
 
     .prevBtn{
-        left: 15%;
+        left: 20%;
         margin: 0; 
         max-width: 48px;   
         padding-top: 0;
@@ -825,7 +910,7 @@ body{
         top: -8px;
     }
     .nextBtn{
-        right: 15%;
+        right: 20%;
         margin: 0;   
         max-width: 48px; 
         padding-top: 0;
