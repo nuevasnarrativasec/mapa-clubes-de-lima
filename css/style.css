@@ -83,7 +83,9 @@ body{
                 }
                 #social,
                 #social-2{
-                    float: right;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
                 }
                      #social ul,
                      #social-2 ul{
@@ -104,27 +106,30 @@ body{
                                 width: 36px;
                             }
                             #fb{
-                                background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/personas-desaparecidas/img/fb-icon.png?v2) no-repeat 0 0;
+                                background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/abuso-infantil/img/fb-icon-negro.png?v2) no-repeat 0 0;
                                 background-size: 100% !important;
                                 border: none;
+                                color: transparent;
                                 display: inline-block;
                                 height: 36px;
                                 text-indent: -9999px;
                                 width: 36px;
                             }
                             #wst{                
-                                background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/personas-desaparecidas/img/wsp-icon.png?v2) no-repeat 0 0 !important;
+                                background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/abuso-infantil/img/wsp-icon-negro.png?v2) no-repeat 0 0 !important;
                                 background-size: 100% !important;
                                 border: none;
+                                color: transparent;
                                 display: none;
                                 height: 36px;
                                 text-indent: -9999px;
                                 width: 36px;
                             }
                             #tw{            
-                                background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/personas-desaparecidas/img/tw-icon.png?v2) no-repeat 0 0 !important;
+                                background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/abuso-infantil/img/tw-icon-negro.png?v2) no-repeat 0 0 !important;
                                 background-size: 100% !important;
                                 border: none;
+                                color: transparent;
                                 display: inline-block;
                                 height: 36px;
                                 text-indent: -9999px;
@@ -272,6 +277,16 @@ body{
                 transform: translate(-50%, 0);               
                 width: 100%;
             }
+                .box-header-dt{
+                    margin: 0 auto 20px;
+                    max-width: 600px;  
+                    position: relative;
+                    text-align: left;                  
+                }
+                    .box-header-dt img.logo-dt{
+                        display: inline-block;
+                        vertical-align: top;                    
+                    }
                 .ctn-header-interior img{
                     display: block;
                     margin: 0 auto;
@@ -320,6 +335,7 @@ body{
                 min-height: 260px;
             }
         .box-mapa{
+            margin-top: 40px;
             position: relative;
         }
             .ctn-box-mapa-1,
@@ -613,6 +629,13 @@ body{
     .box-cabecera{        
         background-size: cover;
     }
+    .box-header-dt{
+        margin: 0 auto 40px;
+        padding: 0 10px;
+    }
+    #social{
+        right: 10px;
+    }
     .ctn-header-interior{
         left: inherit;
         position: inherit; 
@@ -781,7 +804,22 @@ body{
     .btn-empezar{
         font: 21px / 1.3 "Noto Serif KR", serif;
         font-weight: 700;
-        max-width: 125px;
+        max-width: 45%;
+    }
+
+    .prevBtn{
+        left: 15%;
+        margin: 0;    
+        padding-top: 0;
+        position: absolute;
+        top: -8px;
+    }
+    .nextBtn{
+        right: 15%;
+        margin: 0;    
+        padding-top: 0;
+        position: absolute;
+        top: -8px;
     }
 
 }

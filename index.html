@@ -13,14 +13,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- inject:css -->
-    <link rel="stylesheet" href="./css/style.css?v32"> 
+    <link rel="stylesheet" href="./css/style.css?v35"> 
     <!-- endinject -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-       
+    <style>   
+        .ads__zocalo,
+        .ribbon__container,
+        .grippy-host,     
+        .skin-template-model0,
+        #gpt_zocalo, 
+        #clever-45754-sticky-footer-shadow,
+        #browsi_wrapper_0_ai_1_rc_0,
+        #browsi_wrapper_1_ai_1_rc_0,
+        #browsi_wrapper_2_ai_1_rc_0,
+        #browsi_wrapper_3_ai_1_rc_0,
+        #browsi_wrapper_4_ai_1_rc_0,
+        #browsi_wrapper_5_ai_1_rc_0,
+        #browsi_wrapper_6_ai_1_rc_0,
+        #browsi_wrapper_7_ai_1_rc_0,
+        #browsi_wrapper_8_ai_1_rc_0,
+        #browsi_wrapper_9_ai_1_rc_0,
+        #browsi_wrapper_10_ai_1_rc_0{
+            display: none !important;
+            height: 0 !important;
+        }  
+        .nav-d__main-scroll.scrolled{
+            z-index: 9999;
+        }
+    </style>
 
 </head>
 <body>
@@ -61,7 +85,16 @@
                 <div class="slide">
                     <div class="box-header-interior" id="header-1">
                         <div class="ctn-header-interior">
-                            <img src="./img/logo-dt.png" width="100%"/>
+                            <div class="box-header-dt">
+                                <img src="./img/logo-dt.png" width="100%" class="logo-dt"/>
+                                <div id="social">
+                                    <button id="fb" class="sharer button" data-sharer="facebook" data-hashtag="" data-url="#">Facebook</button>
+                            
+                                    <button id="wst" class="sharer button" data-sharer="whatsapp" data-title="El Comercio" data-url="#">Whatsapp</button>
+                            
+                                    <button id="tw" class="sharer button" data-sharer="twitter" data-title="El Comercio" data-hashtags="" data-via="elcomercio_peru" data-url="#">Twitter</button>
+                                </div>
+                            </div>                            
                             <h1>   
                                 490 años de Lima:
                                 <span>una ciudad con pasión futbolera</span>
@@ -765,7 +798,16 @@
                 <div class="slide">                    
                     <div class="box-header-interior" id="header-2">
                         <div class="ctn-header-interior">
-                            <img src="./img/logo-dt.png" width="100%"/>
+                            <div class="box-header-dt">
+                                <img src="./img/logo-dt.png" width="100%" class="logo-dt"/>
+                                <div id="social">
+                                    <button id="fb" class="sharer button" data-sharer="facebook" data-hashtag="" data-url="#">Facebook</button>
+                            
+                                    <button id="wst" class="sharer button" data-sharer="whatsapp" data-title="El Comercio" data-url="#">Whatsapp</button>
+                            
+                                    <button id="tw" class="sharer button" data-sharer="twitter" data-title="El Comercio" data-hashtags="" data-via="elcomercio_peru" data-url="#">Twitter</button>
+                                </div>
+                            </div>  
                             <h1>   
                                 490 años de Lima:
                                 <span>una ciudad con pasión futbolera</span>
@@ -1304,7 +1346,16 @@
                 <div class="slide">
                     <div class="box-header-interior" id="header-3">
                         <div class="ctn-header-interior">
-                            <img src="./img/logo-dt.png" width="100%"/>
+                            <div class="box-header-dt">
+                                <img src="./img/logo-dt.png" width="100%" class="logo-dt"/>
+                                <div id="social">
+                                    <button id="fb" class="sharer button" data-sharer="facebook" data-hashtag="" data-url="#">Facebook</button>
+                            
+                                    <button id="wst" class="sharer button" data-sharer="whatsapp" data-title="El Comercio" data-url="#">Whatsapp</button>
+                            
+                                    <button id="tw" class="sharer button" data-sharer="twitter" data-title="El Comercio" data-hashtags="" data-via="elcomercio_peru" data-url="#">Twitter</button>
+                                </div>
+                            </div> 
                             <h1>   
                                 490 años de Lima:
                                 <span>una ciudad con pasión futbolera</span>
@@ -1910,7 +1961,16 @@
                 <div class="slide">
                     <div class="box-header-interior" id="header-4">
                         <div class="ctn-header-interior">
-                            <img src="./img/logo-dt.png" width="100%"/>
+                            <div class="box-header-dt">
+                                <img src="./img/logo-dt.png" width="100%" class="logo-dt"/>
+                                <div id="social">
+                                    <button id="fb" class="sharer button" data-sharer="facebook" data-hashtag="" data-url="#">Facebook</button>
+                            
+                                    <button id="wst" class="sharer button" data-sharer="whatsapp" data-title="El Comercio" data-url="#">Whatsapp</button>
+                            
+                                    <button id="tw" class="sharer button" data-sharer="twitter" data-title="El Comercio" data-hashtags="" data-via="elcomercio_peru" data-url="#">Twitter</button>
+                                </div>
+                            </div> 
                             <h1>   
                                 490 años de Lima:
                                 <span>una ciudad con pasión futbolera</span>
@@ -2966,33 +3026,66 @@
         });
     </script>
 
+    <!-- compartir -->
+    <script>
+        function shareUrl(event) {
+            const button = event.target;
+            const url = button.getAttribute('data-url');
+            
+            const sharer = button.getAttribute('data-sharer');
+            let shareUrl = '';
+
+            switch (sharer) {
+            case 'facebook':
+                const fbHashtag = button.getAttribute('data-hashtag') || '';
+                shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&hashtag=${encodeURIComponent(fbHashtag)}`;
+                break;
+                
+            case 'whatsapp':
+                const whatsappTitle = button.getAttribute('data-title');
+                shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(whatsappTitle + ' ' + url)}`;
+                break;
+                
+            case 'twitter':
+                const twitterTitle = button.getAttribute('data-title');
+                const twitterHashtags = button.getAttribute('data-hashtags');
+                const twitterVia = button.getAttribute('data-via');
+                shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(twitterTitle)}&url=${encodeURIComponent(url)}&hashtags=${twitterHashtags}&via=${twitterVia}`;
+                break;
+            }
+
+            window.open(shareUrl, '_blank');
+        }
+
+        document.querySelectorAll('.sharer').forEach(button => {
+            button.addEventListener('click', shareUrl);
+        });
+    </script>
+
     <!-- slider -->
     <script>
         const sliderContainer = document.querySelector('.slider-container');
-const slides = sliderContainer.querySelector('.slides');
-const slide = slides.querySelectorAll('.slide');
+        const slides = sliderContainer.querySelector('.slides');
+        const slide = slides.querySelectorAll('.slide');
 
-let currentIndex = 0;
+        let currentIndex = 0;
 
-sliderContainer.addEventListener('click', (event) => {
-    if (event.target.closest('.nextBtn')) {
-        currentIndex = (currentIndex + 1) % slide.length;
-        updateSlider();
-    }
+        sliderContainer.addEventListener('click', (event) => {
+            if (event.target.closest('.nextBtn')) {
+                currentIndex = (currentIndex + 1) % slide.length;
+                updateSlider();
+            }
 
-    if (event.target.closest('.prevBtn')) {
-        currentIndex = (currentIndex - 1 + slide.length) % slide.length;
-        updateSlider();
-    }
-});
+            if (event.target.closest('.prevBtn')) {
+                currentIndex = (currentIndex - 1 + slide.length) % slide.length;
+                updateSlider();
+            }
+        });
 
-function updateSlider() {
-    const slideWidth = slide[0].clientWidth; // Obtiene el ancho de un slide
-    slides.style.transform = `translateX(-${currentIndex * slideWidth}px)`; // Desplaza el contenedor en píxeles
-}
-
-
-
+        function updateSlider() {
+            const slideWidth = slide[0].clientWidth; // Obtiene el ancho de un slide
+            slides.style.transform = `translateX(-${currentIndex * slideWidth}px)`; // Desplaza el contenedor en píxeles
+        }
     </script>
     
     <!-- mostrar data -->
