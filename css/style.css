@@ -245,7 +245,7 @@ body{
         }
         .navigation {
             position: absolute;
-            top: 292px;
+            top: 10px;
             width: 100%;
             transform: translateY(-50%);
             text-align: center;
@@ -320,7 +320,7 @@ body{
                 min-height: 260px;
             }
         .box-mapa{
-
+            position: relative;
         }
             .ctn-box-mapa-1,
             .ctn-box-mapa-2,
@@ -587,7 +587,7 @@ body{
 
 }
     .box-footer ul{
-        margin: 30px auto;
+        margin: 80px auto 0;
         padding: 0;
     }
         .box-footer ul li{
@@ -628,22 +628,22 @@ body{
         background-color: rgb(107, 32, 32);*/
         background: url(../img/bg-header-1-movil.jpg) no-repeat center top;
         background-size: 100%;
-        min-height: 310px;
+        min-height: inherit;
     }
     #header-2 {
         background: url(../img/bg-header-2-movil.jpg) no-repeat center top;
         background-size: 100%;
-        min-height: 310px;
+        min-height: inherit;
     }
     #header-3 {
         background: url(../img/bg-header-3-movil.jpg) no-repeat center top;
         background-size: 100%;
-        min-height: 310px;
+        min-height: inherit;
     }
     #header-4 {
         background: url(../img/bg-header-4-movil.jpg) no-repeat center top;
         background-size: 100%;
-        min-height: 310px;
+        min-height: inherit;
     }
 
     .icon-presiona-2{
@@ -665,20 +665,20 @@ body{
     }
 
     .box-header-interior h1{
-        font-size: 25px;
+        font-size: 2.2rem;
     }
     .box-header-interior h1 span{
-        font-size: 16px;
+        font-size: 19px;
     }
     .box-header-interior p{
         /*max-width: 320px;*/
         max-width: 90%;
     }
     .navigation{
-        top: 356px;
+        /*top: 356px;*/
     }
     .box-mapa {
-        margin: 15px auto 0;
+        margin: 35px auto 0;
         width: 95%;       
     }
     .icon-presiona-1{

@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- inject:css -->
-    <link rel="stylesheet" href="./css/style.css?v31"> 
+    <link rel="stylesheet" href="./css/style.css?v32"> 
     <!-- endinject -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,6 +73,14 @@
                     </div>
 
                     <div class="box-mapa">
+                        <div class="navigation">
+                            <button class="nav-btn prevBtn">
+                                <img src="./img/flecha-izq.png" alt="" width="100%">
+                            </button>
+                            <button class="nav-btn nextBtn">
+                                <img src="./img/flecha-der.png" alt="" width="100%">
+                            </button>
+                        </div>
                         <h5>Lima Oeste</h5>
 
                         <div class="ctn-box-mapa-1">
@@ -763,12 +771,20 @@
                                 <span>una ciudad con pasión futbolera</span>
                             </h1>
                             <p>
-                                El 9 de setiembre de 1859, residentes británicos fundaron Lima Cricket&Football Club, el primer club de fútbol de Lima y América. 165 años después, la ciudad metropolitana cuenta con más de 950 equipos dentro de 38 distritos y cuatro intradistritales. ¿Los territorios con más conjuntos registrados? Ate Vitarte e Independencia. Te invitamos a revisar este mapa interactivo con información brindada por la Liga Provincial de Fútbol de Lima, afiliada a la FPF.
+                                <span>El 9 de setiembre de 1859, residentes británicos fundaron Lima Cricket&Football Club, el primer club de fútbol de Lima y América. 165 años después, la ciudad metropolitana cuenta con más de 950 equipos dentro de 38 distritos y cuatro intradistritales. </span>¿Los territorios con más conjuntos registrados? Ate Vitarte e Independencia. Te invitamos a revisar este mapa interactivo con información brindada por la Liga Provincial de Fútbol de Lima, afiliada a la FPF.
                             </p>
                         </div>               
                     </div>
 
                     <div class="box-mapa">
+                        <div class="navigation">
+                            <button class="nav-btn prevBtn">
+                                <img src="./img/flecha-izq.png" alt="" width="100%">
+                            </button>
+                            <button class="nav-btn nextBtn">
+                                <img src="./img/flecha-der.png" alt="" width="100%">
+                            </button>
+                        </div>
                         <h5>Lima Este</h5>
 
                         <div class="ctn-box-mapa-2">
@@ -1294,12 +1310,20 @@
                                 <span>una ciudad con pasión futbolera</span>
                             </h1>
                             <p>
-                                El 9 de setiembre de 1859, residentes británicos fundaron Lima Cricket&Football Club, el primer club de fútbol de Lima y América. 165 años después, la ciudad metropolitana cuenta con más de 950 equipos dentro de 38 distritos y cuatro intradistritales. ¿Los territorios con más conjuntos registrados? Ate Vitarte e Independencia. Te invitamos a revisar este mapa interactivo con información brindada por la Liga Provincial de Fútbol de Lima, afiliada a la FPF.
+                                <span>El 9 de setiembre de 1859, residentes británicos fundaron Lima Cricket&Football Club, el primer club de fútbol de Lima y América. 165 años después, la ciudad metropolitana cuenta con más de 950 equipos dentro de 38 distritos y cuatro intradistritales. </span>¿Los territorios con más conjuntos registrados? Ate Vitarte e Independencia. Te invitamos a revisar este mapa interactivo con información brindada por la Liga Provincial de Fútbol de Lima, afiliada a la FPF.
                             </p>
                         </div>               
                     </div>
 
                     <div class="box-mapa">
+                        <div class="navigation">
+                            <button class="nav-btn prevBtn">
+                                <img src="./img/flecha-izq.png" alt="" width="100%">
+                            </button>
+                            <button class="nav-btn nextBtn">
+                                <img src="./img/flecha-der.png" alt="" width="100%">
+                            </button>
+                        </div>
                         <h5>Lima Sur</h5>
 
                         <div class="ctn-box-mapa-3">
@@ -1892,12 +1916,20 @@
                                 <span>una ciudad con pasión futbolera</span>
                             </h1>
                             <p>
-                                El 9 de setiembre de 1859, residentes británicos fundaron Lima Cricket&Football Club, el primer club de fútbol de Lima y América. 165 años después, la ciudad metropolitana cuenta con más de 950 equipos dentro de 38 distritos y cuatro intradistritales. ¿Los territorios con más conjuntos registrados? Ate Vitarte e Independencia. Te invitamos a revisar este mapa interactivo con información brindada por la Liga Provincial de Fútbol de Lima, afiliada a la FPF.
+                                <span>El 9 de setiembre de 1859, residentes británicos fundaron Lima Cricket&Football Club, el primer club de fútbol de Lima y América. 165 años después, la ciudad metropolitana cuenta con más de 950 equipos dentro de 38 distritos y cuatro intradistritales. </span>¿Los territorios con más conjuntos registrados? Ate Vitarte e Independencia. Te invitamos a revisar este mapa interactivo con información brindada por la Liga Provincial de Fútbol de Lima, afiliada a la FPF.
                             </p>
                         </div>               
                     </div>
 
                     <div class="box-mapa">
+                        <div class="navigation">
+                            <button class="nav-btn prevBtn">
+                                <img src="./img/flecha-izq.png" alt="" width="100%">
+                            </button>
+                            <button class="nav-btn nextBtn">
+                                <img src="./img/flecha-der.png" alt="" width="100%">
+                            </button>
+                        </div>
                         <h5>Lima Norte</h5>
 
                         <div class="ctn-box-mapa-4">
@@ -2415,14 +2447,7 @@
                 </div>
 
             </div>
-            <div class="navigation">
-                <button class="nav-btn" id="prevBtn">
-                    <img src="./img/flecha-izq.png" alt="" width="100%">
-                </button>
-                <button class="nav-btn" id="nextBtn">
-                    <img src="./img/flecha-der.png" alt="" width="100%">
-                </button>
-            </div>
+            
         </div>        
     
     </div><!--main-->
@@ -2943,26 +2968,31 @@
 
     <!-- slider -->
     <script>
-        const slides = document.querySelector('.slides');
-        const slide = document.querySelectorAll('.slide');
-        const nextBtn = document.getElementById('nextBtn');
-        const prevBtn = document.getElementById('prevBtn');
-    
-        let currentIndex = 0;
-    
-        nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % slide.length;
-            updateSlider();
-        });
-    
-        prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + slide.length) % slide.length;
-            updateSlider();
-        });
-    
-        function updateSlider() {
-            slides.style.transform = `translateX(-${currentIndex * 25}%)`;
-        }
+        const sliderContainer = document.querySelector('.slider-container');
+const slides = sliderContainer.querySelector('.slides');
+const slide = slides.querySelectorAll('.slide');
+
+let currentIndex = 0;
+
+sliderContainer.addEventListener('click', (event) => {
+    if (event.target.closest('.nextBtn')) {
+        currentIndex = (currentIndex + 1) % slide.length;
+        updateSlider();
+    }
+
+    if (event.target.closest('.prevBtn')) {
+        currentIndex = (currentIndex - 1 + slide.length) % slide.length;
+        updateSlider();
+    }
+});
+
+function updateSlider() {
+    const slideWidth = slide[0].clientWidth; // Obtiene el ancho de un slide
+    slides.style.transform = `translateX(-${currentIndex * slideWidth}px)`; // Desplaza el contenedor en píxeles
+}
+
+
+
     </script>
     
     <!-- mostrar data -->
