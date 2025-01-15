@@ -668,7 +668,8 @@ body{
         font-size: 16px;
     }
     .box-header-interior p{
-        max-width: 320px;
+        /*max-width: 320px;*/
+        max-width: 90%;
     }
     .navigation{
         top: 356px;
