@@ -619,6 +619,9 @@ body{
         transform: inherit; 
         width: 100%;
     }
+        .ctn-header-interior span{
+            display: none;
+        }
 
     #header-1 {
         /*background: inherit;
