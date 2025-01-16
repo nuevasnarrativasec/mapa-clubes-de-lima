@@ -308,6 +308,9 @@ body{
                     max-width: 600px;
                     text-align: center;
                 }
+                    .box-header-interior p b{
+                        font-family:  'prelosemibold';   
+                    }
             .slide .bg-header-desktop{
                 display: block;
             }
